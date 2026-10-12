@@ -17,3 +17,10 @@ npm ci
 ```shell
 npx playwright test
 ```
+
+Примечания
+----------
+
+Тесты запускаются в установленном Google Chrome в headed-режиме (`channel: 'chrome'`
+в `playwright.config.ts`): анти-бот uchi.ru блокирует headless-браузеры и встроенный
+Chromium Playwright, из-за чего виджет поддержки не загружается на странице.
